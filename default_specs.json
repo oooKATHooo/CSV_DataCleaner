@@ -1,0 +1,32 @@
+{
+    "input_file" : "data/00_origin_data.csv",
+    "output_file" : "data/01_cleaned_data.csv",
+    "delimiter": ",", 
+    "cleaning_info_file": "data/cleaning_info.txt",
+
+    "export_output_file": true,
+
+    "create_profiles": true,
+    "input_file_profile": "profiles/profile_in.html", 
+    "output_file_profile": "profiles/profile_out.html", 
+
+    "drop_double_headers": true,
+    "drop_duplicates" : true,
+    "drop_na" : true,
+    "drop_na_how" : {"all":[], "any":"all"},
+    
+    "drop_row_title": true,
+    "drop_col" : [],
+    
+    "str_columns_upper" : [],
+    "float_col": ["Price Each"],
+    "int_col": ["Quantity Ordered"],
+    "numeric_col": [],
+    "datetime_col": ["Order Date"],
+    
+    "outliers_col": ["Price Each"],
+
+    "replace_char_details": [
+        {"col": ["Product", "Purchase Address"], "change": {"@":""}},
+        {"col": ["Product"], "change": {" ":"_"}}]
+}
