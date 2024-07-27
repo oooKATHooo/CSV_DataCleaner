@@ -24,7 +24,7 @@
     "numeric_col": [],
     "datetime_col": ["Order Date"],
     
-    "outliers_col": ["Price Each"],
+    "outliers_col": [],
 
     "replace_char_details": [
         {"col": ["Product", "Purchase Address"], "change": {"@":""}},

@@ -37,3 +37,88 @@
 
 ==================================================
 
+2024-07-27 10:17:37,007 - DEBUG : start init with test_specs.json:
+2024-07-27 10:17:37,009 - DEBUG : specs in cleaner
+2024-07-27 10:17:37,492 - DEBUG : csv to DataFrame - finished.
+
+2024-07-27 10:17:37,492 - DEBUG : 'drop_double_header':
+2024-07-27 10:17:46,941 - DEBUG : 355 removed.
+
+2024-07-27 10:17:46,948 - DEBUG : remove_column:
+2024-07-27 10:17:46,973 - INFO : droped first column.
+2024-07-27 10:17:46,974 - WARNING : could not drop column Order ID.
+2024-07-27 10:17:46,975 - DEBUG : finished with remove_column.
+
+2024-07-27 10:17:46,975 - DEBUG : 'without_nan_rows':
+2024-07-27 10:19:00,168 - DEBUG : 545 removed.
+
+2024-07-27 10:19:00,174 - DEBUG : 'without_duplicates':
+2024-07-27 10:19:00,324 - DEBUG : 264 removed.
+
+2024-07-27 10:19:15,645 - DEBUG : Order Date could be converted as a date.
+2024-07-27 10:19:15,731 - DEBUG : finished datatype corrections.
+
+2024-07-27 10:19:15,731 - DEBUG : replace characters:
+2024-07-27 10:19:15,885 - DEBUG : finished replacement.
+
+2024-07-27 10:19:15,885 - DEBUG : 'convert_columns_upper':
+2024-07-27 10:19:15,925 - DEBUG : converting columns to uppercase finished.
+
+2024-07-27 10:19:15,926 - DEBUG : outliers:
+2024-07-27 10:19:15,960 - DEBUG : removed 36985 rows.
+
+2024-07-27 10:19:15,961 - DEBUG : create_profiles:
+2024-07-27 10:19:18,141 - DEBUG : created profile of origin.
+2024-07-27 10:19:35,110 - DEBUG : saved profile of origin.
+2024-07-27 10:19:35,873 - DEBUG : created profile of cleaned data.
+2024-07-27 10:19:44,116 - DEBUG : saved profile of cleaned data.
+
+2024-07-27 10:19:44,133 - DEBUG : 'save_as_csv':
+2024-07-27 10:19:45,024 - DEBUG : saved cleaned data.
+
+2024-07-27 10:19:45,039 - DEBUG : finished specific_cleaning.
+
+==================================================
+
+2024-07-27 10:29:58,435 - DEBUG : start init with default_specs.json:
+2024-07-27 10:29:58,435 - DEBUG : specs in cleaner
+2024-07-27 10:29:58,821 - DEBUG : csv to DataFrame - finished.
+
+2024-07-27 10:29:58,821 - DEBUG : 'drop_double_header':
+2024-07-27 10:30:07,538 - DEBUG : 355 removed.
+
+2024-07-27 10:30:07,545 - DEBUG : remove_column:
+2024-07-27 10:30:07,562 - INFO : droped first column.
+2024-07-27 10:30:07,562 - DEBUG : finished with remove_column.
+
+2024-07-27 10:30:07,562 - DEBUG : 'without_nan_rows':
+2024-07-27 10:30:07,629 - DEBUG : 545 removed.
+
+2024-07-27 10:30:07,629 - DEBUG : 'without_duplicates':
+2024-07-27 10:30:07,764 - DEBUG : 264 removed.
+
+2024-07-27 10:30:24,844 - DEBUG : Order Date could be converted as a date.
+2024-07-27 10:30:24,917 - DEBUG : finished datatype corrections.
+
+2024-07-27 10:30:24,917 - DEBUG : replace characters:
+2024-07-27 10:30:25,064 - DEBUG : finished replacement.
+
+2024-07-27 10:30:25,065 - DEBUG : 'convert_columns_upper':
+2024-07-27 10:30:25,065 - DEBUG : nothing to convert to uppercase.
+
+2024-07-27 10:30:25,065 - DEBUG : outliers:
+2024-07-27 10:30:25,065 - DEBUG : removed 0 rows.
+
+2024-07-27 10:30:25,065 - DEBUG : create_profiles:
+2024-07-27 10:30:25,780 - DEBUG : created profile of origin.
+2024-07-27 10:30:39,088 - DEBUG : saved profile of origin.
+2024-07-27 10:30:40,838 - DEBUG : created profile of cleaned data.
+2024-07-27 10:30:48,364 - DEBUG : saved profile of cleaned data.
+
+2024-07-27 10:30:48,379 - DEBUG : 'save_as_csv':
+2024-07-27 10:30:49,582 - DEBUG : saved cleaned data.
+
+2024-07-27 10:30:49,591 - DEBUG : finished specific_cleaning.
+
+==================================================
+

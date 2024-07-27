@@ -1,14 +1,14 @@
 {
     "input_file" : "data/00_origin_data.csv",
-    "output_file" : "data/01_cleaned_data.csv",
+    "output_file" : "data/01_cleaned_data_test.csv",
     "delimiter": ",",
-    "cleaning_info_file": "data/cleaning_info.txt",
+    "cleaning_info_file": "data/cleaning_info_test.txt",
 
     "export_output_file": true,
 
-    "create_profiles": false,
-    "input_file_profile": "profiles/input_file_test.html", 
-    "output_file_profile": "profiles/output_file_test.html", 
+    "create_profiles": true,
+    "input_file_profile": "profiles/profile_in_test.html", 
+    "output_file_profile": "profiles/profile_out_test.html", 
 
     "drop_double_headers": true,
     "drop_duplicates" : true,

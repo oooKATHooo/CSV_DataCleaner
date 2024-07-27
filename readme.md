@@ -58,7 +58,7 @@ der Datei **default_specs.json** besitzen:
     "numeric_col": [],
     "datetime_col": ["Order Date"],
     
-    "outliers_col": ["Quantity Ordered"],
+    "outliers_col": [],
 
     "replace_char_details": [
       {"col": ["Product", "Purchase Address"], "change": {"@":""}},
@@ -107,4 +107,4 @@ und die Datentypen nach der Bereinigung wie üblich über cleaner.df.dtypes
 Die Profiling Reports werden standardmäßig im Ordner profiles gespeichert und sind mit einem Browser zu öffnen.
 
 ## Weitere Optionen:
-Falls unter bestimmten Umständen die Reihenfolge der Bereinigungsmethoden geändert werden muss, kann dies nach dem Vorbild der Methode cleaner.specific_cleaning() erfolgen, welche die verschiedenen Reinigungsprozesse aneinanderreiht. Diese sind so konzipiert, dass innerhalb der einzelnen Methoden geprüft wird, ob die jeweilige Bereinigung in der Spezifikationsdatei aktiviert ist. Nur dann werden die Transformationen durchgeführt.
+Falls unter bestimmten Umständen die Reihenfolge der Bereinigungsmethoden geändert werden muss, kann dies nach dem Vorbild der Methode cleaner.specific_cleaning() erfolgen, welche die verschiedenen Reinigungsprozesse nach Baukastenprinzip aneinanderreiht. Diese sind so konzipiert, dass innerhalb der einzelnen Methoden geprüft wird, ob die jeweilige Bereinigung in der Spezifikationsdatei aktiviert ist. Nur dann werden die Transformationen durchgeführt.
